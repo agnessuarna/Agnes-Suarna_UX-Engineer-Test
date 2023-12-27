@@ -3,6 +3,7 @@ html {
   margin: 0;
   padding: 0;
   font-family: poppins, sans-serif;
+  overflow: visible;
 }
 
 header,
@@ -13,7 +14,7 @@ footer {
 
 main {
   display: block;
-  padding-bottom: 150px;
+  padding-bottom: 10px;
 }
 
 .container {
@@ -88,6 +89,7 @@ header {
   display: flex;
   overflow-x: auto;
   white-space: nowrap;
+  overflow: hidden;
 }
 
 .product-card {
@@ -107,7 +109,7 @@ header {
 .footer-content {
   max-height: 0;
   overflow: hidden;
-  padding: 0 30px;
+  padding: 5px 30px;
 }
 
 .footer-content p {
@@ -119,11 +121,17 @@ header {
   background-color: #dadada;
   text-align: center;
 }
+.footer-extra p {
+  margin: 0;
+  padding: 10px 20px;
+}
 
 .footer-toggle {
   cursor: pointer;
-  height: 50px;
+  height: 20px;
   color: blue;
+  padding-bottom: 20px;
+  padding-top: 5px;
 }
 .scroll-to-top {
   position: fixed;
@@ -223,10 +231,12 @@ header {
   border-radius: 50%;
   cursor: pointer;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
 }
 
 .arrow-button:hover {
   background-color: #2980b9;
+  color: #ffffff;
 }
 
 @media (min-width: 1024px) {
@@ -253,28 +263,34 @@ header {
   padding: 10px;
   cursor: pointer;
   border-radius: 50%;
+  font-size: 20px;
   font-weight: bold;
   scroll-behavior: smooth;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .scroll-to-top-btn img {
   width: 100px;
-  border-radius: 50%;
+  border-radius: 40%;
 }
 
 .scroll-to-top-btn:hover {
   background-color: #0056b3;
+  color: #ffffff;
+  opacity: 70%;
 }
 
 .banner1,
 .banner3 {
   display: flex;
+  padding: 20px;
 }
 
 .banner2 {
   display: flex;
   flex-direction: column;
   height: 500px;
+  padding: 20px;
 }
 .box {
   flex: 1;
