@@ -1,18 +1,4 @@
-/* Function */
-function toggleFooter() {
-  var footerContent = document.querySelector(".footer-content");
-  var toggleButton = document.querySelector(".footer-toggle");
-
-  if (footerContent.style.maxHeight) {
-    // Content is expanded, collapse it
-    footerContent.style.maxHeight = null;
-    toggleButton.textContent = "Show all ⌄";
-  } else {
-    // Content is collapsed, expand it
-    footerContent.style.maxHeight = footerContent.scrollHeight + "px";
-    toggleButton.textContent = "Collapse all ⌃";
-  }
-}
+/* Function for Product Card*/
 document.addEventListener("DOMContentLoaded", function () {
   const productCardContainer = document.getElementById(
     "product-card-container"
@@ -69,6 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
   productCardContainer.addEventListener("scroll", updateButtonVisibility);
 });
 
+/* Function for Floating button "scroll to top" with arrow icon */
 document.addEventListener("DOMContentLoaded", function () {
   const scrollToTopBtn = document.getElementById("scrollToTopBtn");
 
@@ -88,3 +75,19 @@ document.addEventListener("DOMContentLoaded", function () {
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
   });
 });
+
+/* Footer*/
+function toggleFooter() {
+  var footerContent = document.querySelector(".footer-content");
+  var toggleButton = document.querySelector(".footer-toggle");
+
+  if (footerContent.style.maxHeight) {
+    // Content is expanded, collapse it
+    footerContent.style.maxHeight = null;
+    toggleButton.textContent = "Show all ⌄";
+  } else {
+    // Content is collapsed, expand it
+    footerContent.style.maxHeight = footerContent.scrollHeight + "px";
+    toggleButton.textContent = "Collapse all ⌃";
+  }
+}

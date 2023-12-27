@@ -24,7 +24,7 @@ main {
 
 header {
   background-color: #0095da;
-  color: white;
+  color: #ffffff;
   padding: 1px 20px;
   text-align: center;
 }
@@ -77,7 +77,50 @@ header {
   background-color: #1e90ff;
 }
 .content > div {
-  background-color: white;
+  background-color: #ffffff;
+}
+
+.banner1,
+.banner3 {
+  display: flex;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 0;
+}
+
+.banner2 {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  padding: 20px;
+}
+.box {
+  flex: 1;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  font-size: 36px;
+  font-weight: bold;
+  margin: 20px 10px;
+}
+
+.box1 {
+  background-color: #ffff00;
+}
+
+.box2 {
+  background-color: #00ffff;
+}
+
+.box3 {
+  background-color: #f474ff;
+}
+
+.box4 {
+  background-color: #ff8a8a;
 }
 
 #product-container {
@@ -95,54 +138,9 @@ header {
 .product-card {
   min-width: 200px;
   margin: 10px;
-  background-color: white;
+  background-color: #ffffff;
   padding: 10px;
   box-sizing: border-box;
-}
-
-.footer {
-  background-color: #dadada;
-  position: fixed;
-  padding-bottom: 60px;
-}
-
-.footer-content {
-  max-height: 0;
-  overflow: hidden;
-  padding: 5px 30px;
-}
-
-.footer-content p {
-  text-align: justify;
-}
-
-.footer-extra {
-  width: 100%;
-  background-color: #dadada;
-  text-align: center;
-}
-.footer-extra p {
-  margin: 0;
-  padding: 10px 20px;
-}
-
-.footer-toggle {
-  cursor: pointer;
-  height: 20px;
-  color: blue;
-  padding-bottom: 20px;
-  padding-top: 5px;
-}
-.scroll-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: #000;
-  color: #fff;
-  padding: 10px;
-  border-radius: 50%;
-  cursor: pointer;
-  display: none;
 }
 
 .product-card {
@@ -183,7 +181,7 @@ header {
 }
 
 .product-card .discount-info {
-  color: gray;
+  color: #808080;
   text-align: justify;
   display: flex;
   font-size: 16px;
@@ -205,7 +203,7 @@ header {
 
 .product-card button {
   background-color: #0095da;
-  color: white;
+  color: #ffffff;
   padding: 10px;
   width: 100%;
   border: none;
@@ -223,14 +221,14 @@ header {
 }
 
 .arrow-button {
-  background-color: white;
-  color: blue;
+  background-color: #ffffff;
+  color: #0000ff;
   font-size: 16px;
   padding: 10px 15px;
   border: none;
   border-radius: 50%;
   cursor: pointer;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 5px #00000033;
   font-weight: bold;
 }
 
@@ -252,12 +250,57 @@ header {
   }
 }
 
+.footer {
+  background-color: #dadada;
+  position: fixed;
+  padding-bottom: 60px;
+}
+
+.footer-content {
+  max-height: 0;
+  overflow: hidden;
+  padding: 5px 30px;
+}
+
+.footer-content p {
+  text-align: justify;
+}
+
+.footer-extra {
+  width: 100%;
+  background-color: #dadada;
+  text-align: center;
+}
+.footer-extra p {
+  margin: 0;
+  padding: 10px 20px;
+}
+
+.footer-toggle {
+  cursor: pointer;
+  height: 20px;
+  color: #0000ff;
+  padding-bottom: 20px;
+  padding-top: 5px;
+}
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #000;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: none;
+}
+
 .scroll-to-top-btn {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: white;
-  color: blue;
+  background-color: #ffffff;
+  color: #0000ff;
   border: none;
   border-radius: 5px;
   padding: 10px;
@@ -278,44 +321,4 @@ header {
   background-color: #0056b3;
   color: #ffffff;
   opacity: 70%;
-}
-
-.banner1,
-.banner3 {
-  display: flex;
-  padding: 20px;
-}
-
-.banner2 {
-  display: flex;
-  flex-direction: column;
-  height: 500px;
-  padding: 20px;
-}
-.box {
-  flex: 1;
-  height: 200px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: black;
-  font-size: 36px;
-  font-weight: bold;
-  margin: 20px 10px;
-}
-
-.box1 {
-  background-color: yellow;
-}
-
-.box2 {
-  background-color: cyan;
-}
-
-.box3 {
-  background-color: #f474ff;
-}
-
-.box4 {
-  background-color: #ff8a8a;
 }
